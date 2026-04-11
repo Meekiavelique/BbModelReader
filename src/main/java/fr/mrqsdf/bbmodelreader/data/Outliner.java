@@ -6,6 +6,7 @@ public class Outliner {
 
     private String name;
     private float[] origin;
+    private float[] rotation;
     private Float color;
     private String uuid;
     private Boolean export;
@@ -22,6 +23,10 @@ public class Outliner {
 
     public float[] getOrigin() {
         return origin;
+    }
+
+    public float[] getRotation() {
+        return rotation;
     }
 
     public Float getColor() {
@@ -66,6 +71,10 @@ public class Outliner {
 
     public void setOrigin(float[] origin) {
         this.origin = origin;
+    }
+
+    public void setRotation(float[] rotation) {
+        this.rotation = rotation;
     }
 
     public void setColor(Float color) {

@@ -19,6 +19,7 @@ final class OutlinerTypeAdapter implements JsonDeserializer<Outliner> {
         Outliner outliner = new Outliner();
         outliner.setName(getAsString(object, "name"));
         outliner.setOrigin(context.deserialize(object.get("origin"), float[].class));
+        outliner.setRotation(context.deserialize(object.get("rotation"), float[].class));
         outliner.setColor(getAsFloat(object, "color"));
         outliner.setUuid(getAsString(object, "uuid"));
         outliner.setExport(getAsBoolean(object, "export"));

@@ -14,6 +14,12 @@ public class Element {
     private Integer autouv;
     private Integer color;
     private float[] origin;
+    private float[] rotation;
+    private float[] translation;
+    private float[] scale;
+    private Float inflate;
+    private Boolean shade;
+    private Boolean mirror_uv;
     private Face faces;
     private String type;
     private String uuid;
@@ -64,6 +70,30 @@ public class Element {
 
     public float[] getOrigin() {
         return origin;
+    }
+
+    public float[] getRotation() {
+        return rotation;
+    }
+
+    public float[] getTranslation() {
+        return translation;
+    }
+
+    public float[] getScale() {
+        return scale;
+    }
+
+    public Float getInflate() {
+        return inflate;
+    }
+
+    public Boolean getShade() {
+        return shade;
+    }
+
+    public Boolean getMirrorUv() {
+        return mirror_uv;
     }
 
     public Face getFaces() {
